@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projeto.css">
+    <link rel="icon" href="logo-porsche-4096.png" type="image/x-icon">
+    <title>Finanças - SRV</title>
+</head>
+<body>
+    <div class="banner">
+    <div class="navbar">
+    <img src="logo-porsche-4096.png" class="logo">
+    </ul>
+    </div>
+    </div>
+    <div class="content">
+        <h1>Contabilidade</h1>
+        <p></p>
+        <div>
+            <iframe src="Relatório Financeiro.html" width="700" height="450"></iframe>
+        </div>
+        
+        <script>
+            const cadastroButton = document.getElementById("tipodecadastro");
+            const relatorioButton = document.getElementById("relatorioButton");
+            const consultaButton = document.getElementById("consultaButton");
+            
+    
+            cadastroButton.addEventListener("click", function () {
+                window.location.href = "tipodecadastro.html";
+            });
+    
+            relatorioButton.addEventListener("click", function () {
+                window.location.href = "relatorio.html";
+            });
+    
+            consultaButton.addEventListener("click", function () {
+                window.location.href = "consulta.html";
+            });
+        </script>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projeto.css">
+    <link rel="icon" href="logo-porsche-4096.png" type="image/x-icon">
+    <title>Cadastros - SRV</title>
+</head>
+<body>
+    <div class="banner">
+    <div class="navbar">
+    <img src="logo-porsche-4096.png" class="logo">
+    
+    </div>
+    </div>
+    <div class="content">
+        <h1>Saraiva Veículos</h1>
+        <div>
+            <button type="button" id="cadastrocliente"><span></span>CLIENTE</button>
+            <button type="button" id="cadastrofunc"><span></span>FUNCIONÁRIO</button>
+            <button type="button" id="cadastroproduto"><span></span> PRODUTO</button>
+            <button type="button" id="cadastrofornec"><span></span> FORNECEDOR</button>
+        </div>
+
+        
+        <script>
+            const cadastroButton = document.getElementById("cadastrocliente");
+            const funcionarioButton = document.getElementById("cadastrofunc");
+            const cadastroprodutoButton = document.getElementById("cadastroproduto");
+            const cadastrofornecButton = document.getElementById("cadastrofornec")
+    
+            cadastroButton.addEventListener("click", function () {
+                window.location.href = "cadastrocliente.html";
+            });
+    
+            funcionarioButton.addEventListener("click", function () {
+                window.location.href = "cadastrofunc.html";
+            });
+    
+            cadastroprodutoButton.addEventListener("click", function () {
+                window.location.href = "cadastroproduto.html";
+            })
+
+            cadastrofornecButton.addEventListener("click", function () {
+                window.location.href = "cadastrofornec.html";
+            });
+        </script>
+    </div> 
+</body>
+</html>

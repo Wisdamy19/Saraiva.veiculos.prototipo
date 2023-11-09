@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projeto.css">
+    <link rel="icon" href="logo-porsche-4096.png" type="image/x-icon">
+    <title>Relatório - SRV</title>
+</head>
+<body>
+    <div class="banner">
+    <div class="navbar">
+    <img src="logo-porsche-4096.png" class="logo">
+    
+    </div>
+    </div>
+    <div class="content">
+        <h1>Saraiva Veículos</h1>
+        <div>
+            <button type="button" id="estoque"><span></span> ESTOQUE</button>
+            <button type="button" id="finanças"><span></span> FINANÇAS</button>
+        </div>
+
+        
+        <script>
+            const estoqueButton = document.getElementById("estoque");
+            const finançasButton = document.getElementById("finanças");
+            const consultaButton = document.getElementById("consultaButton");
+    
+            estoqueButton.addEventListener("click", function () {
+                window.location.href = "estoque.html";
+            });
+    
+            finançasButton.addEventListener("click", function () {
+                window.location.href = "finanças.html";
+            });
+    
+            consultaButton.addEventListener("click", function () {
+                window.location.href = "consulta.html";
+            });
+        </script>
+    </div> 
+</body>
+</html>
